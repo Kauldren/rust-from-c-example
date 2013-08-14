@@ -1,0 +1,7 @@
+#[link(name = "rustoskernel", vers = "0.8-pre")];
+#[license = "MIT"];
+#[crate_type = "lib"];
+#[no_std];
+#[allow(ctypes)];
+
+pub mod main;

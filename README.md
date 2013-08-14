@@ -1,8 +1,19 @@
-This is an example of creating a shared library implemented in Rust
-that can be linked and called from C.
+## Requirements
 
-Tested with Rust master branch, commit 4da1cfe92369725b2e6bf34acb1fdebdbaff9339.
+* yasm (1.1.0+)
+* rust (0.8-pre)
+* clang (3.4 ... 3.1+ might work)
+* grub-mkrescue and xorriso
+* binutils for gcc (uses -m32 flag instead of cross compiling)
 
-Blog post: http://bluishcoder.co.nz/2013/08/08/linking_and_calling_rust_functions_from_c.html
+You will have to build rust from master at https://github.com/mozilla/rust
 
-Discussion: http://www.reddit.com/r/rust/comments/1jvqvf/an_minimal_example_of_calling_into_a_rust_lib/
+## License
+
+See LICENSE in the root of the repository.
+
+## Acknowledgements
+
+* Build stuff egregiously copied from [jmgrosen's shorai](https://github.com/jmgrosen/shorai)
+* zero.c is from [doublec's rust-from-c-example](https://github.com/doublec/rust-from-c-example)
+
